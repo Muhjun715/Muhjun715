@@ -1,0 +1,19 @@
+/* External CSS ditulis dalam file terpisah */
+.external-style {
+    background-color: #27ae60;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.external-heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.external-style p {
+    color: #ffffff;
+    line-height: 1.6;
+}
