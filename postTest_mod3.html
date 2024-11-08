@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Implementasi CSS</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS ditulis di dalam tag style */
+        .internal-style {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .internal-heading {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    </style>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stylesheet_postTestMod3.css">
+</head>
+<body>
+    <!-- Contoh Inline CSS -->
+    <div style="background-color: #e74c3c; color: white; padding: 15px; margin: 20px; border-radius: 5px;">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Contoh Inline CSS</h2>
+        <p style="line-height: 1.6;">Ini adalah contoh penggunaan inline CSS yang ditulis langsung pada atribut style di elemen HTML.</p>
+    </div>
+
+    <!-- Contoh Internal CSS -->
+    <div class="internal-style">
+        <h2 class="internal-heading">Contoh Internal CSS</h2>
+        <p>Ini adalah contoh penggunaan internal CSS yang ditulis di dalam tag style di bagian head.</p>
+    </div>
+
+    <!-- Contoh External CSS -->
+    <div class="external-style">
+        <h2 class="external-heading">Contoh External CSS</h2>
+        <p>Ini adalah contoh penggunaan external CSS yang ditulis dalam file terpisah.</p>
+    </div>
+</body>
+</html>
