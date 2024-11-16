@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Profil Program Studi - Fakultas Ilmu Komputer UNIKU</title>
+  <style>
+    body {
+        font-family: arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    .header{
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        margin-bottom: 30px;
+        transition: background-color 0.3s ease;
+    }
+    .header:hover {
+        background-color: #e0e0e0;
+    }
+    .prodi-section{
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .prodi-section:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+        border-color: #3498db;
+    }
+    h1{
+        color: #2c3e50;
+    }
+    h2{
+        color: #3498db;
+        transition: color 0.3s ease;
+    }
+    .prodi-section:hover h2 {
+        color: #2980b9;
+    }
+    h3{
+        color: #2c3e50;
+    }
+    .visi-misi{
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+    }
+    .visi-misi:hover {
+        background-color: #f0f0f0;
+    }
+    ul li, ol li {
+        transition: padding-left 0.3s ease;
+    }
+    ul li:hover, ol li:hover {
+        padding-left: 10px;
+        color: #3498db;
+    }
+    h4 {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    h4:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .search-container {
+           margin-bottom: 20px;
+           text-align: center;
+       }
+       .search-input {
+           padding: 8px;
+           font-size: 16px;
+           width: 50%;
+           border-radius: 5px;
+           border: 1px solid #ddd;
+       }
+
+    .fakultas_table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+    .fakultas_table caption {
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+    }
+    .fakultas_table th, .faculty-table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+    }
+    .fakultas_table th {
+        background-color: #f5f5f5;
+        color: #2c3e50;
+    }
+    .fakultas_table tr:hover {
+        background-color: #f9f9f9;
+    }
+  </style>
+      
+</head>
+<body>
+   <div class="header">
+       <img src="logo fkom.jpeg" alt="logo fkom.jpeg">
+       <h1>FAKULTAS ILMU KOMPUTER</h1>
+       <h2>UNIVERSITAS KUNINGAN</h2>
+       <p>Jl. Pramuka No.67 Purwawinangun, Kuningan, Jawa Barat 45512</p>
+   </div>
+   
+   <div class="search-container">
+    <input type="text" class="search-input" id="searchBox" placeholder="Cari nama dosen atau program studi...">
+   </div>
+
+   <table class="fakultas_table" border="1">
+    <caption><strong>DAFTAR DOSEN</strong></caption>
+    <tr>
+        <th>No.</th>
+        <th>Nama</th>
+        <th>Homebase</th>
+        <th>Rumpun Keilmuan</th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td>Tito Sugiharto, M.Eng</td>
+        <td>Teknik Informatika</td>
+        <td>Computer Engineering</td>
+    </tr>
+    <tr>
+        <td align="right">2.</td>
+        <td>Erik Kurniadi, M.Kom.</td>
+        <td>Sistem Informasi</td>
+        <td>Information System</td>
+    </tr>
+    <tr>
+        <td align="right">3.</td>
+        <td>Jerry D. Rahajaan, M.Sn. </td>
+        <td>Desain Komunikasi Visual</td>
+        <td>Seni, Desain, & Media</td>
+    </tr>
+    <tr>
+        <td align="right">4.</td>
+        <td>Panji Novantara, M.T.</td>
+        <td>Teknik Informatika</td>
+        <td>Computer Science</td>
+    </tr>
+    <tr>
+        <td align="right">5.</td>
+        <td>Panji Novantara, M.T.</td>
+        <td>Teknik Informatika</td>
+        <td>Teknik Sipil</td>
+    </tr>
+</table>
+
+   <!-- Sistem Informasi -->
+   <div class="prodi-section">
+       <h2>Program Studi Sistem Informasi (S1)</h2>
+       <h4>Terakreditasi B</h4>
+       <div class="visi-misi">
+           <h3>Visi</h3>
+           <p>""Terwujudnya program studi system informasi sebagai program studi yang  handal dan unggul dalam penyelenggaraaan Tri Darma Perguruan Tinggi unggul di bidang rekayas asistem informasi di Wilayah Jawa Barat pada tahun 2032""</p>
+
+           <h3>Misi</h3>
+           <ol>
+               <li>Menyelenggarakan pendidikan berbasis system informasi sesuai dengan dinamika kebutuhan masyarakat</li>
+               <li>Melaksanakan penelitian dan pengabdian pad amasyarakat dalam bidang system informasi</li>
+               <li>Mengembangkan   kehidupan akademik yang sehat sesuai dengan nilai-nilai  dan norma-norma yang berkembang  di dunia akademik</li>
+               <li>Menjalin kerjasama secara institusional dengan lembaga lain di bidang system informasi untuk pengembangan dan pemberdayaan program studi</li>
+               <li>Ikut serta memberdayakan masyarakat</li>
+           </ol>
+       </div>
+
+       <h3>Kompetensi Program Studi Sistem Informasi</h3>
+       <p>Kompetensi Umum</p>
+       <ul>
+           <li>Memperbaiki proses-proses organisasional</li>
+           <li>Memanfaatkan peluang yang tercipta dari inovasi teknologi</li>
+           <li>Memahami dan mendokumentasikan kebutuhan-kebutuhan informasi</li>
+           <li>Merancang dan mengelola arsitektur informasi organisasi (enterprise architecture)</li>
+           <li>Mengidentifikasi dan mengevaluasi solusi teknologi informasi dan berbagai alternative sumbernya
+            Mengamankan data dan infrastruktur organisasi</li>
+           <li>Memahami, mengelola, dan mengendalikan resiko teknologi informasi</li>
+       </ul>
+   </div>
+
+   <!-- Teknik Informatika -->
+   <div class="prodi-section">
+       <h2>Program Studi Teknik Informatika (S1)</h2>
+       <h4>Terakreditasi B</h4>
+       <div class="visi-misi">
+           <h3>Visi</h3>
+           <p>"Terwujudnya program studi yang handal dan unggul dibidang teknologi informasi yang memiliki standar kompetensi dan menghasilkan tenaga-tenaga ahli IT yang cerdas dan berbudi luhur di wilayah Jawa Barat pada tahun 2032"</p>
+
+           <h3>Misi</h3>
+           <ol>
+               <li>Menyelenggarakan pendidikan bermutu tinggi dibidang Teknik Informatika bagi masyarakat sebagai sarana untuk menghasilkan lulusan yang bermoral, berkualitas, professional, kompeten, sesuai dengan kebutuhan standar industry, profesi dan perkembangan ilmu pengetahuan dan teknologi saat ini dan yang akan datang</li>
+               <li>Memenuhi kebutuhan masyarakat melalui pengenalan, pengalihan dan penyebaran ilmu pengetahuan dan teknologi yang relevan dengan ilmu teknik informatika untuk mencapai kualitas standar program studi dengan berfokus pada integritasi teknologi informasi dalam setiap aspek kehidupan manusia</li>
+               <li>Menemukan, mengembangkan dan menciptakan karya di bidang informatika serta menyebarkan ilmu pengetahuan dan teknologi demi kepekaan dan kepedulian terhadap kehidupan masyarakat</li>
+               <li>Menggalang penelitian untuk berperan aktif dalam peningkatan kemajuan ilmu pengetahuan dan teknologi, khususnya bidang informatika</li>
+               <li>Menumbuhkan budaya diskusi dlam pelaksanaan Tri Dharma perguruan Tinggi</li>
+           </ol>
+       </div>
+
+       <h3>Kompetensi Program Studi Teknik Informatika</h3>
+       <ul>
+           <li>Kemampuan untuk merancang dan melakukan eksperimen, menganalisis dan menginterprestasikan suatu perangkat lunak berbasis database dan system informasi untuk menyelesaikan persoalan teknologi informasi melalui metodologi mutakhir diberbagai bidang seperti pendidikan, perbankan, telekomunikasi, manufaktur, atau industri lainnya</li>
+           <li>Mampu mengembangkan system sesuai dengan fokus pada bidang keahlian yang dilakukan secara mandiri maupun bersama-sama, smart application untuk keperluan industri (soft computing) dan mengembangkan aplikasi mobile beserta infrastruktur pendukungnya (mobile computing)</li>
+           <li>Membangun atau merancang system yang mampu mengakses informasi secara cepat, tepat dan akurat di sector industry maupun tempat mereka bekerja di masa depan. Khususnya merancang bangun perangkat lunak berbasis mobile, anatarmuka perangkat keras dan komunikasi data</li>
+           <li>Kemampuan berkomunikasi yang efektif dalam bahasa inggris Lisan maupun Tulisan</li>
+           <li>Kemampuan dan kapasitas pengetahuan yang cukup sebagai ahli teknik profesional untuk menjalankan tanggungjawab social, budaya, lingkungan, global, dan bisnis, serta peduli terhadap prinsip dan kebutuhan pembangunan berkelanjutan</li>
+           <li>Kemampuan untuk memanfaatkan teknik, keahlian dan peralatan atau tools modern yang diperlukan untuk menyelesaikan tugas dan tanggungjawabnya</li>
+           <li>Mengimplementasikan rancangan system secara efisien dan efektif di dalam sebuah software yang dirancang untuk organisasi atau tatanan komunitas lainnya sehingga mendukung tercapainya visi dan misi organisasi yang bersangkutan</li>
+       </ul>
+   </div>
+
+   <!-- Desain Komunikasi Visual -->
+   <div class="prodi-section">
+       <h2>Program Studi Desain Komunikasi Visual (S1)</h2>
+       <h4>Terakreditasi B</h4>
+       <div class="visi-misi">
+           <h3>Visi</h3>
+           <p>"Menjadi  program studi desain komunikasi visual  yang unggul dalam bidang industri multimedia, periklanan dan grafis yang berbasis teknologi iformasi dan memiliki komitmen yang tinggi terhadap pemberdayaan masyarakat tahun 2032"</p>
+
+           <h3>Misi</h3>
+           <ol>
+               <li>Mengembangkan dan mengimplementasikan pendidikan Desain Komunikasi Visual berbasis teknologi informasi di bidang industri multimedia, periklanan dan desain grafis, yang kreatif serta dapat terintegrasi secara keilmuan dengan disiplin ilmu lain</li>
+               <li>Mengembangkan penelitian dan pengabdian masyarakat, sebagai bagian dari pengembangan keilmuan yang mempunyai nilai kebaruan yang bermanfaat bagi kebutuhan industri dan masyarakat</li>
+           </ol>
+
+           <h3>Tujuan</h3>
+           <ol>
+            <li>Menghasilkan lulusan (Sarjana Desain) yang kreatif dan berjiwa entreupreneur</li>
+            <li>Mengeksplorasi dan memecahkan permasalahan di bidang komunikasi visual dengan penekanan pada sisi inovasi dan integrasi keilmuan dengan menghasilkan karya penelitian dan produk inovasi</li>
+           </ol>
+       </div>
+   </div>
+
+   <!-- Manajemen Informatika -->
+   <div class="prodi-section">
+       <h2>Program Studi D3 Manajemen Informatika</h2>
+       <h4>Terakreditasi B</h4>
+       <div class="visi-misi">
+           <h3>Visi</h3>
+           <p>"Mewujudkan program studi yang unggul dalam bidang teknologi informasi dan komunikasi dan bermutu berbasis entrepeunership yang diseleraskan dengan perkembangan teknologi informasi dan komunikasi serta memiliki komitmen yang tinggi terhadap pemberdayaan masyarakat pada tahun 2032"</p>
+
+           <h3>Misi</h3>
+           <ol>
+               <li>Menyelenggarakan pendidikan, penelitian, dan pengabdian pada masyarakat khususnya dalam penerapan teknologi informasi</li>
+               <li>Memberi bekal pengetahuan teori dan praktek kepada peserta didik agar memiliki kompetensi yang tinggi dalam bidang pemrograman-pemrograman aplikasi untuk pemanfaatn sistem informasi</li>
+               <li>Menyelenggarakan riset-riset ilmiah dibidang teknologi informasi pada dunia pendidikan, industri, bisnis dan akuntansi yang senantiasa berkembang dengan sangat pesat</li>
+               <li>Menjadi sarana terjadinya pertemuan-pertemuan ilmiah baik lingkup lokal, nasional sehingga dapat memberikan kontribusi yang nyata dalam kemajuan teknologi informasi</li>
+               <li>Melayani, memandu, dan menyatu dengan masyarakat dalam upaya ikut serta mewujudkan masyarakat baru Indonesia yang berwawasan luas, dinamis, dan modern</li>
+               <li>Menjadi sarana penggodokan peserta didik sehingga menghasilkan tenaga-tenaga ahli yang mempunyai kompetensi yang tinggi dalam bidang pemrograman-pemrograman aplikasi untuk sistem informasi, kreatif, inovatif, mandiri, profesional, dan mampu bersaing dipasar global dengan para lulusan perguruan tinggi lain yang lebih terkemuka di indonesia, serta berakhlak mulia yang bermanfaat bagi dirinya, masyarakat,bangsa, dan negara</li>
+           </ol>
+       </div>
+
+       <h3>Tujuan</h3>
+       <ul>
+           <li>Mampu bekerja sama, berkomunikasi, dan berinovatif dalam pekerjaannya</li>
+           <li>Mampu melakukan proses evaluasi diri terhadap kelompok kerja yang berada dibawah tanggung jawabnya, dan mengelola pengembangan kompetensi kerja secara mandiri</li>
+           <li>Mampu melakukan troubleshooting untuk menentukan kasus dan memperbaiki error serta memutuskan apa yang harus dilakukan</li>
+           <li>Menjaga dan mengelola jaringan komputer dan lingkungan komputasi terkait termasuk perangkat keras komputer, perangkat lunak sistem, perangkat lunak aplikasi, dan semua konfigurasi</li>
+           <li>Membantu Manajemen Teknologi Informasi dalam merancang dan membangun jaringan</li>
+       </ul>
+   </div>
+
+   <!-- Teknik Sipil -->
+   <div class="prodi-section">
+    <h2>Program Studi Teknik Sipil (S1)</h2>
+    
+    <div class="visi-misi">
+        <h3>Visi</h3>
+        <p>"Menjadi Program Studi yang unggul dalam pengembangan Teknik Sipil di tingkat Jawa Barat pada tahun 2032"</p>
+
+        <h3>Misi</h3>
+        <ol>
+            <li>Menyelenggarakan pendidikan Teknik Sipil yang berkualitas</li>
+            <li>Melaksanakan penelitian di bidang konstruksi yang inovatif</li>
+            <li>Melakukan pengabdian masyarakat dalam bidang infrastruktur</li>
+            <li>Menjalin kerjasama dengan industri konstruksi</li>
+        </ol>
+    </div>
+    <script>
+        
+        document.getElementById("searchBox").addEventListener("input", function () {
+            const searchQuery = this.value.toLowerCase();
+            const table = document.getElementById("dosenTable");
+            const rows = table.getElementsByTagName("tr");
+ 
+            for (let i = 1; i < rows.length; i++) { 
+                const cells = rows[i].getElementsByTagName("td");
+                let rowText = "";
+                for (let j = 1; j < cells.length; j++) {
+                    rowText += cells[j].innerText.toLowerCase() + " ";
+                }
+                rows[i].style.display = rowText.includes(searchQuery) ? "" : "none";
+            }
+        });
+    </script>
+    
+</body>
+</html>
